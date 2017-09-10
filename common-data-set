@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Data Set</title>
+<meta name="robots" content="index,follow" />
+<link rel="pingback" href="http://irp.dpb.cornell.edu/xmlrpc.php" />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Cornell Institutional Research and Planning &raquo; Feed" href="http://irp.dpb.cornell.edu/feed" />
+<link rel="alternate" type="application/rss+xml" title="Cornell Institutional Research and Planning &raquo; Comments Feed" href="http://irp.dpb.cornell.edu/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/irp.dpb.cornell.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.1"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b===c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='stickylist-css'  href='http://irp.dpb.cornell.edu/wp-content/plugins/gravity-forms-sticky-list/css/sticky-list_styles.css?ver=4.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='collapseomatic-css-css'  href='http://irp.dpb.cornell.edu/wp-content/plugins/jquery-collapse-o-matic/light_style.css?ver=1.6' type='text/css' media='all' />
+<link rel='stylesheet' id='thematic_style-css'  href='http://irp.dpb.cornell.edu/wp-content/themes/irp/style.css?ver=4.8.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.5.0'></script>
+<link rel='https://api.w.org/' href='http://irp.dpb.cornell.edu/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://irp.dpb.cornell.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://irp.dpb.cornell.edu/wp-includes/wlwmanifest.xml" /> 
+<link rel="canonical" href="http://irp.dpb.cornell.edu/common-data-set" />
+<link rel='shortlink' href='http://irp.dpb.cornell.edu/?p=145' />
+<link rel="alternate" type="application/json+oembed" href="http://irp.dpb.cornell.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Firp.dpb.cornell.edu%2Fcommon-data-set" />
+<link rel="alternate" type="text/xml+oembed" href="http://irp.dpb.cornell.edu/wp-json/oembed/1.0/embed?url=http%3A%2F%2Firp.dpb.cornell.edu%2Fcommon-data-set&#038;format=xml" />
+	    <script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	    </script>
+	    <script type="text/javascript">
+		try{
+		    var pageTracker = _gat._getTracker("mclarkberg@gmail.com");
+		    pageTracker._trackPageview();
+		    pageTracker._setDomainName(".irp.dpb.cornell.edu");
+		} catch(err) {}
+	    </script>
+            <script type="text/javascript">
+                jQuery(document).ready( function() {
+                    jQuery('a').click(function(ev) {
+                        var link = this.toString();
+                        var aExt = new Array('pdf','doc','docx');
+                        var aPieces = new Array();
+                        var aPieces = link.split('\.');
+                        if (aPieces.length>0)
+                        {
+                           var ext = aPieces[aPieces.length-1];
+                           
+                            for (var i = 0;i<aExt.length; i++)
+                            {
+                                if (aExt[i] == ext)
+                                {
+				    pageTracker._trackPageview(link);
+				    break;
+                                }
+                            }
+                        }
+                    });
+                });
+            </script>
+            <link rel="shortcut icon" href="http://irp.dpb.cornell.edu/wp-content/themes/irp/images/favicon.ico" /><link rel="stylesheet"  type="text/css" href="http://irp.dpb.cornell.edu/wp-content/themes/irp/css/cu-identity.css" /><!-- Google Analytics Tracking by Google Analyticator 6.5.0: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = [''];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-34381162-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+
+<body class="page-template-default page page-id-145 unknown-os unknown-browser">
+
+
+
+<!--
+	The following link provides a way for people using text-based browsers and
+	screen readers to skip over repetitive navigation elements so that they can 
+	get directly to the content. It is hidden from general users through CSS.
+-->
+<div id="skipnav">
+	<a href="#content">Skip to main content</a>
+</div>
+
+<hr class="banner-separator" />
+
+<!-- The following div contains the Cornell University logo with unit signature -->
+<div id="cu-identity">
+	<div id="cu-logo">
+		<a id="insignia-link" href="http://www.cornell.edu/"><img src="http://irp.dpb.cornell.edu/wp-content/themes/irp/images/unit_signature_unstyled.gif" alt="Cornell University" width="283" height="76" border="0" /></a>
+		<div id="unit-signature-links">
+			<a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a>
+			<a id="unit-link" href="http://dpb.cornell.edu/">Division of Planning and Budget</a>
+		</div>
+  </div>
+	
+	<!--
+		The search-navigation div contains links that allow the user to search
+		either the unit website or all of cornell.edu.
+		These links will be displayed in the unit signature banner and will
+		be aligned with the right edge of the page.
+	-->
+	<div id="search-navigation">
+		<ul>
+			<li><a href="#">Search DPB</a></li>
+			<li><a href="http://www.cornell.edu/search/">Search Cornell</a></li>
+		</ul>
+	</div>
+</div>
+
+<hr class="banner-separator" />
+
+	<div id="wrapper" class="hfeed">
+
+		<div id="header">
+
+        	       		
+    	</div><!-- #header-->		        
+    	    	
+	<div id="main">
+
+		<div id="container">
+		
+			<div id="content">
+
+		<div id="page-top" class="aside">
+			<ul class="xoxo">
+
+				<li id="custom_post_widget-2" class="widgetcontainer widget_custom_post_widget"><h3 class="widgettitle">Spotlight on Data</h3>
+<p><a href="http://irp.dpb.cornell.edu/tableau_visual/1483">Admissions statistics</a></p>
+<p><a href="http://irp.dpb.cornell.edu/tableau_visual/2011-new-student-survey-and-select-2015-pulse">First-Year to Senior, linked data</a></p>
+<p><a href="http://irp.dpb.cornell.edu/tableau_visual/employee-headcount">Employee headcounts</a></p>
+<span class="collapseomatic " id="id320"  tabindex="0" title="More"    >More</span><div id="target-id320" class="collapseomatic_content ">
+<p><a href="http://irp.dpb.cornell.edu/reports-and-presentations/graduation-rate-reports">Graduation rates</a></p>
+<p><a href="http://irp.dpb.cornell.edu/tableau_visual/2013-new-student-survey">New Student Survey, selected results</a></p>
+<p><a href="http://irp.dpb.cornell.edu/reports-and-presentations/graduation-rate-reports">All Graduation Rate Reports</a></p>
+</div>
+</li><li id="custom_post_widget-4" class="widgetcontainer widget_custom_post_widget"><h3 class="widgettitle">Recent Surveys</h3>
+<p><a href="http://irp.dpb.cornell.edu/surveys/pulse-surveys">2017 PULSE Survey</a></p>
+<p><a href="http://irp.dpb.cornell.edu/surveys/senior-survey">2016 Senior Survey</a></p>
+<p><a href="http://irp.dpb.cornell.edu/surveys/employee-survey">2016 Employee Survey</a></p>
+<span class="collapseomatic " id="id3701"  tabindex="0" title="More"    >More</span><div id="target-id3701" class="collapseomatic_content ">
+<p><a href="http://irp.dpb.cornell.edu/surveys/faculty-surveys">2016 Academic Survey</a></p>
+<p><a href="http://irp.dpb.cornell.edu/surveys/freshman-survey">2016 New Student Survey</a></p>
+</div>
+</li><li id="custom_post_widget-15" class="widgetcontainer widget_custom_post_widget"><p><strong>Contact</strong><br />
+Ludgarda Simmonds<br />
+lrs96@cornell.edu<br />
+607-255-0876</p>
+</li><li id="custom_post_widget-14" class="widgetcontainer widget_custom_post_widget"><p><a href="http://irp.dpb.cornell.edu/gallery"><img class="alignnone size-full wp-image-2607" style="text-decoration: none;" alt="gallery-icon" src="http://irp.dpb.cornell.edu/wp-content/uploads/2013/12/gallery-icon.png" width="58" height="64" /></a></p>
+</li>
+				</ul>
+
+		</div><!-- #page-top .aside -->
+
+    	     		
+				<div id="post-145" class="post-145 page type-page status-publish hentry" > 
+
+				
+
+					<h1 class="entry-title">Common Data Set</h1>
+	                
+					<div class="entry-content">
+	
+						<p>The Common Data Set (CDS) provides our answers to many frequently asked questions.  One goal of the CDS is to improve the comparability of data reported across institutions; this standardized questionnaire was developed through collaboration among colleges and universities, representatives of higher education organizations, the National Center for Education Statistics, and others.</p>
+<p>Definitions of data elements are maintained by the <a href="http://www.commondataset.org/" target="_blank">Common Data Set Initiative</a>.</p>
+<ul>
+<li>CURRENT Common Data Set Fall 2016 (<a href="http://dpb.cornell.edu/documents/1000569.pdf">pdf</a>), (<a href="http://dpb.cornell.edu/documents/1000570.xlsx">xls</a>)</li>
+<li>Common Data Set Fall 2015 (<a href="http://dpb.cornell.edu/documents/1000567.pdf">pdf</a>), (<a href="http://dpb.cornell.edu/documents/1000568.xls">xls</a>)</li>
+<li>Common Data Set Fall 2014 (<a href="http://dpb.cornell.edu/documents/1000563.pdf">pdf</a>), (<a href="http://dpb.cornell.edu/documents/1000564.xlsx">xls</a>)</li>
+<li>Common Data Set Fall 2013 (<a href="http://dpb.cornell.edu/documents/1000554.pdf">pdf</a>), (<a href="http://dpb.cornell.edu/documents/1000555.xls">xls</a>)</li>
+<li>Common Data Set Fall 2012 (<a href="http://dpb.cornell.edu/documents/1000530.pdf">pdf</a>), (<a href="http://dpb.cornell.edu/documents/1000531.xls">xls</a>)</li>
+<li>Common Data Set Fall 2011 <a href="http://dpb.cornell.edu/documents/1000504.pdf#pagemode=bookmarks">(pdf)</a>, <a href="http://dpb.cornell.edu/documents/1000505.xls">(xls)</a></li>
+<li>Common Data Set Fall 2010 <a href="http://dpb.cornell.edu/documents/1000464.pdf#pagemode=bookmarks">(pdf)</a>, <a href="http://dpb.cornell.edu/documents/1000463.xls">(xls)</a></li>
+<li>Common Data Set Fall 2009 <a href="http://dpb.cornell.edu/documents/1000435.pdf#pagemode=bookmarks">(pdf)</a>, <a href="http://dpb.cornell.edu/documents/1000436.xls">(xls)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000420.pdf#pagemode=bookmarks">Common Data Set Fall 2008 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000395.pdf">Common Data Set Fall 2007 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000375.pdf">Common Data Set Fall 2006 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000297.pdf">Common Data Set Fall 2005 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000007.pdf">Common Data Set Fall 2004 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000008.pdf">Common Data Set Fall 2003 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000009.pdf">Common Data Set Fall 2002 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000010.pdf">Common Data Set Fall 2001 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000011.pdf">Common Data Set Fall 2000 (pdf)</a></li>
+<li><a href="http://dpb.cornell.edu/documents/1000012.pdf">Common Data Set Fall 1999 (pdf)</a></li>
+</ul>
+<p>Information compiled by:</p>
+<p>Ludgarda Simmonds, <a href="mailto:kr86@cornell.edu">lrs96@cornell.edu</a><br />
+Institutional Research &amp; Planning<br />
+Cornell University<br />
+440 Day Hall<br />
+Ithaca, NY 14853</p>
+
+					</div><!-- .entry-content -->
+					
+				</div><!-- #post -->
+	
+			
+		<div id="page-bottom" class="aside">
+			<ul class="xoxo">
+
+				<li id="text-9" class="widgetcontainer widget_text">			<div class="textwidget">website by <a href="http://knowledgetown.com">Knowledge Town</a></div>
+		</li>
+				</ul>
+
+		</div><!-- #page-bottom .aside -->
+
+	
+			</div><!-- #content -->
+			
+			 
+			
+		</div><!-- #container -->
+
+
+		<div id="primary" class="aside main-aside">
+
+			<ul class="xoxo">
+
+				<li id="text-8" class="widgetcontainer widget_text">			<div class="textwidget"><a href="http://irp.dpb.cornell.edu">Institutional Research & Planning</a></div>
+		</li>
+				</ul>
+
+		</div><!-- #primary .aside -->
+
+    
+    <div id="access">
+    
+    	<div class="skip-link"><a href="#content" title="Skip navigation to the content">Skip to content</a></div><!-- .skip-link -->
+    	
+    	<div class="menu"><ul id="menu-irp-menu" class="sf-menu"><li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-163"><a href="http://irp.dpb.cornell.edu/">IRP Home</a>
+<ul  class="sub-menu">
+	<li id="menu-item-630" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-630"><a href="http://irp.dpb.cornell.edu/">IRP Overview</a></li>
+	<li id="menu-item-534" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-534"><a href="http://irp.dpb.cornell.edu/irp-home/about-us">About Us</a></li>
+</ul>
+</li>
+<li id="menu-item-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-487"><a href="http://irp.dpb.cornell.edu/university-factbook">Facts and Dashboards</a>
+<ul  class="sub-menu">
+	<li id="menu-item-2342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2342"><a href="http://irp.dpb.cornell.edu/university-factbook/quick-facts">Quick Facts About Cornell University</a></li>
+	<li id="menu-item-629" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-629"><a href="http://irp.dpb.cornell.edu/university-factbook">University Factbook</a></li>
+	<li id="menu-item-1642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1642"><a href="http://irp.dpb.cornell.edu/strategic-metrics">Strategic Metrics</a></li>
+	<li id="menu-item-543" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-543"><a href="http://irp.dpb.cornell.edu/university-factbook/diversity">Diversity Dashboards</a></li>
+	<li id="menu-item-346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="http://irp.dpb.cornell.edu/university-factbook/university-organization">Organizational Charts</a></li>
+	<li id="menu-item-169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-169"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives">Factbook Archives</a>
+	<ul  class="sub-menu">
+		<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-268"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/admissions">Admissions</a>
+		<ul  class="sub-menu">
+			<li id="menu-item-285" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-285"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/admissions/undergraduate-admissions">Undergraduate</a></li>
+			<li id="menu-item-311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-311"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/admissions/graduate-school-admissions">Graduate School</a></li>
+			<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/admissions/professional-schools-admissions">Professional Schools</a></li>
+			<li id="menu-item-309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-309"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/admissions/medical-division-admissions">Medical Division</a></li>
+		</ul>
+</li>
+		<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-267"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/enrollment">Enrollment</a>
+		<ul  class="sub-menu">
+			<li id="menu-item-330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/enrollment/total-enrollment">Total Enrollment</a></li>
+			<li id="menu-item-329" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-329"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/enrollment/undergraduate-enrollment">Undergraduate Enrollment</a></li>
+			<li id="menu-item-328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-328"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/enrollment/graduate-school-enrollment">Graduate School Enrollment</a></li>
+			<li id="menu-item-327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-327"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/enrollment/professional-schools-enrollment">Professional Schools Enrollment</a></li>
+			<li id="menu-item-326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-326"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/enrollment/medical-division-enrollment">Medical Division Enrollment</a></li>
+		</ul>
+</li>
+		<li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/tuition-and-self-help">Tuition and Self-Help</a></li>
+		<li id="menu-item-290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-290"><a href="http://irp.dpb.cornell.edu/degrees-conferred">Degrees Conferred</a></li>
+		<li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-289"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/human-resources">Human Resources</a>
+		<ul  class="sub-menu">
+			<li id="menu-item-392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/human-resources/academic-staff">Academic Staff</a></li>
+			<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/human-resources/non-academic-staff">Non-academic Staff</a></li>
+		</ul>
+</li>
+		<li id="menu-item-288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/libraries">Libraries</a></li>
+		<li id="menu-item-287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-287"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/research">Research</a></li>
+		<li id="menu-item-286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-286"><a href="http://irp.dpb.cornell.edu/university-factbook/factbook-archives/external-environment">External Environment</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-145 current_page_item menu-item-162"><a href="http://irp.dpb.cornell.edu/common-data-set">Common Data Set</a></li>
+<li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-165"><a href="http://irp.dpb.cornell.edu/surveys">Survey Research</a>
+<ul  class="sub-menu">
+	<li id="menu-item-631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-631"><a href="http://irp.dpb.cornell.edu/surveys">Survey Research Overview</a>
+	<ul  class="sub-menu">
+		<li id="menu-item-386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-386"><a href="http://irp.dpb.cornell.edu/surveys/pulse-surveys">Surveys of All Undergraduate Students</a></li>
+		<li id="menu-item-387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-387"><a href="http://irp.dpb.cornell.edu/surveys/freshman-survey">Incoming Freshman Surveys</a></li>
+		<li id="menu-item-385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-385"><a href="http://irp.dpb.cornell.edu/surveys/senior-survey">Senior Survey</a></li>
+		<li id="menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-381"><a href="http://irp.dpb.cornell.edu/surveys/faculty-surveys">Faculty and Academic Surveys</a></li>
+		<li id="menu-item-382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-382"><a href="http://irp.dpb.cornell.edu/surveys/employee-survey">Employee Survey</a></li>
+		<li id="menu-item-384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-384"><a href="http://irp.dpb.cornell.edu/surveys/alumni-survey">Alumni Survey</a></li>
+		<li id="menu-item-383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-383"><a href="http://irp.dpb.cornell.edu/surveys/parent-survey">Parent Survey</a></li>
+	</ul>
+</li>
+	<li id="menu-item-166" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-166"><a href="http://irp.dpb.cornell.edu/surveys/calendar-of-campus-surveys">Calendar of Campus Surveys</a></li>
+	<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="http://irp.dpb.cornell.edu/surveys/you-want-to-survey">So YOU Want to Survey Cornell Students…</a></li>
+	<li id="menu-item-168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-168"><a href="http://irp.dpb.cornell.edu/surveys/student-research-group">Student &#038; Campus Life Research Group</a>
+	<ul  class="sub-menu">
+		<li id="menu-item-1118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1118"><a href="http://irp.dpb.cornell.edu/surveys/student-research-group/sasrg-mission-and-scope">SCLRG Mission and Scope</a></li>
+		<li id="menu-item-1144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1144"><a href="http://irp.dpb.cornell.edu/surveys/student-research-group/research-proposals">Formal Review of Research Proposals</a></li>
+		<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1135"><a href="http://irp.dpb.cornell.edu/surveys/student-research-group/sasrg-member-list">SCLRG Member List</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-737"><a href="http://irp.dpb.cornell.edu/reports-and-presentations/special-presentations">Presentations and Reports</a>
+<ul  class="sub-menu">
+	<li id="menu-item-3499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3499"><a href="http://irp.dpb.cornell.edu/data-reporting">Data Reporting Brown Bag</a></li>
+	<li id="menu-item-2403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2403"><a href="http://irp.dpb.cornell.edu/diversity-reports">Diversity Reports and Analyses</a></li>
+	<li id="menu-item-729" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-729"><a href="http://irp.dpb.cornell.edu/reports-and-presentations/special-presentations">Special Topic Reports and Presentations</a></li>
+</ul>
+</li>
+<li id="menu-item-185" class="top-internal-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-185"><a href="http://irp.dpb.cornell.edu/university-accreditation">University Accreditation</a>
+<ul  class="sub-menu">
+	<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href="http://irp.dpb.cornell.edu/university-accreditation">University Accreditation Overview</a></li>
+	<li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-408"><a href="http://irp.dpb.cornell.edu/university-accreditation/accreditation-reports">Accreditation Reports</a></li>
+	<li id="menu-item-407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407"><a href="http://irp.dpb.cornell.edu/university-accreditation/substantive-change-process-for-accreditation">Substantive Change Process for Accreditation</a></li>
+	<li id="menu-item-406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-406"><a href="http://irp.dpb.cornell.edu/university-accreditation/specialized-accreditations">Specialized Accreditations</a></li>
+</ul>
+</li>
+<li id="menu-item-184" class="internal-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-184"><a href="http://irp.dpb.cornell.edu/approval-and-registration/academic-program-proposals">Program Authorization</a>
+<ul  class="sub-menu">
+	<li id="menu-item-918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918"><a href="http://irp.dpb.cornell.edu/approval-and-registration">Approval and Registration Process</a></li>
+	<li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-645"><a href="http://irp.dpb.cornell.edu/approval-and-registration/academic-program-proposals">What Needs To Be Registered?</a></li>
+	<li id="menu-item-427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427"><a href="http://irp.dpb.cornell.edu/approval-and-registration/definitions">Definitions</a></li>
+</ul>
+</li>
+<li id="menu-item-183" class="internal-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-183"><a href="http://irp.dpb.cornell.edu/academic-program-review">Program Evaluation</a>
+<ul  class="sub-menu">
+	<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-644"><a href="http://irp.dpb.cornell.edu/academic-program-review">Program Review Overview</a></li>
+	<li id="menu-item-451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-451"><a href="http://irp.dpb.cornell.edu/academic-program-review/academic-program-review-process">Process</a></li>
+	<li id="menu-item-2987" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2987"><a href="http://irp.dpb.cornell.edu/academic-program-review/academic-analytics">Academic Analytics</a></li>
+	<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="http://irp.dpb.cornell.edu/academic-program-review/faculty-committee-on-program-review">Faculty Committee</a></li>
+</ul>
+</li>
+</ul></div>    	
+    </div><!-- #access -->
+    				
+		</div><!-- #main -->
+    	
+    	<div id="footer">	
+        	
+        	    
+	<div id="siteinfo">        
+
+   			Powered by <a class="wp-link" href="http://WordPress.org/" title="WordPress" rel="generator">WordPress</a>. Built on the <a class="theme-link" href="http://thematictheme.com" title="Thematic Theme Framework" rel="home">Thematic Theme Framework</a>.
+
+	</div><!-- #siteinfo -->
+	
+   	        	
+		</div><!-- #footer -->
+    	
+	</div><!-- #wrapper .hfeed -->
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+</script><script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-content/plugins/jquery-collapse-o-matic/js/collapse.js?ver=1.6.5'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-includes/js/hoverIntent.js?ver=4.8.1'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-content/themes/thematic/library/scripts/superfish.js?ver=1.4.8'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-content/themes/thematic/library/scripts/supersubs.js?ver=0.2b'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-content/themes/thematic/library/scripts/thematic-dropdowns.js?ver=1.0'></script>
+<script type='text/javascript' src='http://irp.dpb.cornell.edu/wp-includes/js/wp-embed.min.js?ver=4.8.1'></script>
+
+</body>
+</html>
