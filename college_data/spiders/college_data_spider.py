@@ -1,10 +1,6 @@
 import scrapy
 #import urllib2
 import sys
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.pdfpage import PDFPage
-from pdfminer.converter import XMLConverter, HTMLConverter, TextConverter
-from pdfminer.layout import LAParams
 from io import StringIO
 from scrapy.contrib.spiders import Rule
 from scrapy.linkextractors import LinkExtractor
@@ -18,6 +14,7 @@ from urllib.parse import urljoin
 from urllib.parse import urldefrag
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
+import pandas as pd
 
 
 done_domain = []
@@ -27,6 +24,18 @@ cds2 = 'CDS'
 factbook = 'Fact Book'
 #factbook2 = 'Facts'
 factbook3 = 'Factbook'
+df = pd.read_csv('SuperClean.csv')
+domain_list = df['Institution_Web_Address']
+college_name = df['Institution_Name']
+college_dict = {}
+
+def get_domain(domain):
+	domain2 = domain.split('.edu')
+	if '.' not in domain2[0]:
+		if '://' in domain2[0]:
+			domain2[0] = domain2[0][domain2[0].index('://')+3:len(domain2[0])]
+	domain2 = domain2[0].split('.')[-1]
+	return domain2
 
 class CollegeDataSpider(scrapy.Spider):
 	name = "college_data"
@@ -42,6 +51,9 @@ class CollegeDataSpider(scrapy.Spider):
 		thefile = open('domains.txt', 'w+')
 		for domain in done_domain:
 			thefile.write("%s\n" % domain)
+
+
+
 
 	def start_requests(self):
 
@@ -61,6 +73,29 @@ class CollegeDataSpider(scrapy.Spider):
 		)
 		#for url in urls:
 		#	yield scrapy.Request(url=url, callback=self.save_pdf)
+		#df = pd.read_csv('SuperClean.csv')
+		#domain_list = df['Institution_Web_Address']
+		#college_name = df['Institution_Name']
+		print('BINGALEE: ' + str(len(domain_list)))
+		print('DINGALEE: ' + str(len(college_name)))
+		print(*college_name[0:10], sep='\n')
+
+		for idx, domain in enumerate(domain_list):
+			domain = str(domain)
+			if 'mailto:' not in domain and 'tel:' not in domain:
+				if '.edu' in domain:
+
+					domain2 = get_domain(domain)
+					try:
+						os.makedirs('colleges/' + domain2)
+					except OSError as e:
+						if e.errno != errno.EEXIST:
+							raise
+
+					if domain2 not in done_domain:
+						college_dict[str(college_name[idx])] = idx
+						yield scrapy.Request(url='https://www.google.com/search?q=%s+Common+Data+Set' % (college_name[idx].replace(' ', '+')), callback=self.college_parse)
+
 		"""
 		lineNum = 0
 		with open("SlicedAccredited.csv") as infile:
@@ -94,73 +129,84 @@ class CollegeDataSpider(scrapy.Spider):
 		#print(joe[int(joe.index('?q=') + 3):int(joe.index('&amp'))])
 
 		#google search
+		print('RESPONSE URL: ' + response.url)
 		print(*done_domain, sep=' ')
+		#if(response.meta['depth'] < 2):
+		#if we are on college webiste
+		print('BINGALEE: ' + str(len(domain_list)))
+		print('DINGALEE: ' + str(len(college_name)))
+
+
 		if(response.meta['depth'] < 2):
 			if('.edu' not in response.url):
 				# if response is in a pdf stop scraping
+				college_name_extract =  response.url[response.url.index('?q=')+3:response.url.index('+Common+Data')].replace('+', ' ')
+				index = college_dict[college_name_extract]
+				print('INDEX: ' + str(index))
+				print('LENGTH: ' + str(len(domain_list)))
+				print('----------------------------------------')
+				print('----------------------------------------')
+				print('----------------------------------------')
+				checkerDomain = get_domain(domain_list[index])
+
+
+
+
 				if '.pdf' not in response.url or '.PDF' not in response.url:
 					#print('TRYING SUSPECT')
 					for dirty_url in response.css('h3.r a').xpath('@href').extract():#.xpath('//a[contains(@href, ".edu")]/@data-href').extract():
+						
 						dirty_url =  urldefrag(dirty_url)
 						dirty_url = dirty_url[0]
-						#print('KUNG PAO')
-						#print(dirty_url +'\n')
 						slice_url = str(dirty_url)
-						#print('--------------------------------------------------')
-						# IF we are going from google
-						if ('?q=' in slice_url):
-							#print('SLICE URL: ' + slice_url + '\n')
-							slice_url = slice_url[int(slice_url.index('?q=') + 3):int(slice_url.index('&'))]
-							if ('.pdf' in slice_url):
-								#if 'CDS' in slice_url or 'Common'
-								#print('--------------------------------------------------')
-								#print(slice_url)
-								#print('--------------------------------------------------')
-								if not dirty_url.endswith('.pdf'):
-									dirty_url = dirty_url[0:dirty_url.rfind('.pdf')+4]
-								yield scrapy.Request(slice_url, callback=self.save_pdf)
+						print('CHECKER DOMAIN: ' + checkerDomain)
+						if checkerDomain in slice_url:
+							#print('--------------------------------------------------')
+							# IF we are going from google
+							if ('?q=' in slice_url):
+								#print('SLICE URL: ' + slice_url + '\n')
+								slice_url = slice_url[int(slice_url.index('?q=') + 3):int(slice_url.index('&'))]
+								if ('.pdf' in slice_url):
+									#if 'CDS' in slice_url or 'Common'
+									#print('--------------------------------------------------')
+									#print(slice_url)
+									#print('--------------------------------------------------')
+									if not dirty_url.endswith('.pdf'):
+										dirty_url = dirty_url[0:dirty_url.rfind('.pdf')+4]
+									yield scrapy.Request(slice_url, callback=self.save_pdf)
+								else:
+									#print('--------------------------------------------------')
+									#print(slice_url)
+									#print('--------------------------------------------------')
+									#ADD CHECK TO MAKE SURE WE DONT GET REDIRECT LOOP
+									if '.edu' in domain:
+										domain = get_domain(response.url)
+										if domain not in done_domain:
+											yield response.follow(slice_url, callback=self.college_parse)
 							else:
-								#print('--------------------------------------------------')
-								#print(slice_url)
-								#print('--------------------------------------------------')
-								#ADD CHECK TO MAKE SURE WE DONT GET REDIRECT LOOP
-								if '.edu' in domain:
-									domain = response.url.split('.edu')
-									if '.' not in domain[0]:
-										if '://' in domain[0]:
-											domain[0] = domain[0][domain[0].index('://')+3:len(domain[0])]
-									#print('DOMAIN AFTER URL SPLIT: ' + domain[0])
-									domain = domain[0].split('.')[-1]
-								if domain not in done_domain:
-									yield response.follow(slice_url, callback=self.college_parse)
-						else:
-							slice_url = str(dirty_url)
-							#print('SLICE URL: ' + slice_url + '\n')
-							if ('.pdf' in slice_url):
-								#if 'CDS' in slice_url or 'Common'
-								#print('--------------------------------------------------')
-								#print(slice_url)
-								#print('--------------------------------------------------')
-								if not dirty_url.endswith('.pdf'):
-									dirty_url = dirty_url[0:dirty_url.rfind('.pdf')+4]
-								yield scrapy.Request(slice_url, callback=self.save_pdf)
-							else:
-								#print('--------------------------------------------------')
-								#print(slice_url)
-								#print('--------------------------------------------------')
-								#ADD CHECK TO MAKE SURE WE DONT GET REDIRECT LOOP
-								domain = ''
-								if '.edu' in response.url:
-									domain = response.url.split('.edu')
-									if '.' not in domain[0]:
-										if '://' in domain[0]:
-											domain[0] = domain[0][domain[0].index('://')+3:len(domain[0])]
-									#print('DOMAIN AFTER URL SPLIT: ' + domain[0])
-									domain = domain[0].split('.')[-1]
-								if domain not in done_domain:
-									yield response.follow(slice_url, callback=self.college_parse)
+								slice_url = str(dirty_url)
+								#print('SLICE URL: ' + slice_url + '\n')
+								if ('.pdf' in slice_url):
+									#if 'CDS' in slice_url or 'Common'
+									#print('--------------------------------------------------')
+									#print(slice_url)
+									#print('--------------------------------------------------')
+									if not dirty_url.endswith('.pdf'):
+										dirty_url = dirty_url[0:dirty_url.rfind('.pdf')+4]
+									yield scrapy.Request(slice_url, callback=self.save_pdf)
+								else:
+									#print('--------------------------------------------------')
+									#print(slice_url)
+									#print('--------------------------------------------------')
+									#ADD CHECK TO MAKE SURE WE DONT GET REDIRECT LOOP
+									domain = ''
+									if '.edu' in response.url:
+										domain = get_domain(response.url)
+										if domain not in done_domain:
+											yield response.follow(slice_url, callback=self.college_parse)
 
-			#if we are on college webiste
+
+
 			elif('.edu' in response.url):
 					# need to actually search for links that don't contain .edu
 				if '.aspx' not in response.url:
@@ -236,7 +282,7 @@ class CollegeDataSpider(scrapy.Spider):
 							# Track sites which mention a CDS but don't have a PDF link for further analysis
 							allText = response.css('body').extract_first()
 							if(cds.lower() in allText.lower() or cds2.lower() in allText.lower() or factbook.lower() in allText.lower() or factbook3.lower() in allText.lower()):
-								#print('DIRTY STUFF: ' + dirty_url)
+							#print('DIRTY STUFF: ' + dirty_url)
 								if(response.meta['depth'] < 2):
 									print('DEPTH: ' + str(response.meta['depth']) + '<' + response.url + '>')
 									yield response.follow(dirty_url, callback=self.college_parse)
@@ -269,12 +315,7 @@ class CollegeDataSpider(scrapy.Spider):
 	#	path = path[path.index('http'):path.index('.pdf')+4]
 
 		# get rid of things after domain
-		domain = response.url.split('.edu')
-		if '.' not in domain[0]:
-			if '://' in domain[0]:
-				domain[0] = domain[0][domain[0].index('://')+3:len(domain[0])]
-		#print('DOMAIN AFTER URL SPLIT: ' + domain[0])
-		domain = domain[0].split('.')[-1]
+		domain = get_domain(response.url)
 		#print('FINAL DOMAIN: ' + domain)
 
 		# get second to last '.' and go to beginning of edu
@@ -285,17 +326,6 @@ class CollegeDataSpider(scrapy.Spider):
 				raise
 
 		path = 'colleges/' + domain + '/' + path
-		#try:
-		#	os.makedirs(domain)
-		#except OSError as e:
-		#	if e.errno != errno.EEXIST:
-		#		raise
-
-
-
-		#print('--------------------------------------------------')
-		#print(path)
-		#print('--------------------------------------------------')
 
 		with open(path, "wb+") as f:
 			f.write(response.body)
